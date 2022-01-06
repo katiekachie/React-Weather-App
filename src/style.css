@@ -65,6 +65,7 @@ h4 {
 
 .checkout {
   margin-bottom: -1.7rem;
+  text-align: center;
 }
 .weatherWrap {
   display: flex;
@@ -116,7 +117,8 @@ h4 {
 /*search form*/
 .search {
   background-color: var(--dark-color);
-  min-height: 25vh;
+  min-height: 27vh;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,7 +127,6 @@ h4 {
 }
 
 .search h3 {
-  margin-top: 1rem;
   font-size: 3rem;
   color: var(--background-color);
 }
