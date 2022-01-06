@@ -1,0 +1,174 @@
+:root {
+  --background-color: #e0d8ca;
+  --white-color: #f5eddf;
+  --main-color: #637b81;
+  --accent-color: #d0b68a;
+  --dark-color: #d38c6c;
+  --text-color: #99968d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--white-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark-color);
+}
+
+a:hover {
+  color: var(--accent-color);
+}
+
+h1 {
+  color: var(--background-color);
+  font-size: 6rem;
+  font-weight: 700;
+}
+
+h2 {
+  color: var(--accent-color);
+  margin-top: -2rem;
+}
+
+h3 {
+  font-weight: 700;
+}
+
+h4 {
+  font-weight: 200;
+}
+
+/* hero */
+
+.hero {
+  padding: 2rem;
+  background: var(--main-color);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.currentTemp {
+  margin-top: -1.4rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.checkout {
+  margin-bottom: -1.7rem;
+}
+.weatherWrap {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.weatherInfo {
+  display: flex;
+  flex-basis: 5rem;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.moreInfo {
+  align-items: center;
+  margin-top: 1rem;
+  font-size: 2rem;
+  color: var(--background-color);
+}
+
+.heatIcon {
+  max-width: 2rem;
+}
+
+.weatherBox {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  min-width: 15vw;
+  font-size: 2rem;
+  color: var(--dark-color);
+  text-align: center;
+  background: var(--background-color);
+  padding: 1.5rem;
+  border-radius: 5px;
+}
+
+.weatherBox h3 {
+  font-size: 1.5rem;
+}
+
+.weatherImg {
+  max-width: 3rem;
+}
+
+.weatherNowImg {
+  max-width: 10rem;
+}
+
+/*search form*/
+.search {
+  background-color: var(--dark-color);
+  min-height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.search h3 {
+  margin-top: 1rem;
+  font-size: 3rem;
+  color: var(--background-color);
+}
+
+/*form*/
+.searchInput {
+  width: 30vw;
+  height: 4vh;
+}
+
+.search-btn {
+  color: var(--main-color);
+  background: var(--white-color);
+  border: 1px solid;
+  padding: 0.3rem;
+}
+
+.search-btn:hover {
+  color: var(--white-color);
+  background: var(--main-color);
+  cursor: pointer;
+}
+
+/*footer*/
+
+.footer p {
+  text-align: center;
+  font-size: 1rem;
+  color: var(--text-color);
+  margin: 0.3rem;
+}
+
+/* now, make it responsive */
+
+@media (max-width: 991px) {
+  .search {
+    min-height: 40vh;
+  }
+
+  .hero {
+    justify-content: center;
+  }
+
+  .weatherNowImg {
+    margin-top: 2vh;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="src/style.css" />
+    <title>SheCodes Weather</title>
+  </head>
+  <body>
+    <!--city and date-->
+    <section class="hero">
+      <div class="info">
+        <div class="checkout">here's what the weather's like in</div>
+        <h1 id="city">Oita</h1>
+        <h2 id="date">Wed Jan 5</h2>
+      </div>
+
+      <div class="weatherNow">
+        <img src="img/01d.png" class="weatherNowImg" id="icon" />
+      </div>
+
+      <div class="moreInfo">
+        it's currently <span class="currentTemp" id="temperature"></span
+        ><span class="celfa"
+          ><a href="#" id="celcius" class="active">°c</a> ||
+          <a href="#" id="fahrenheit">°f</a></span
+        >
+        <h4>
+          <img src="img/hot.png" class="heatIcon" /> <span id="high">12</span>°c
+        </h4>
+        <h4>
+          <img src="img/cold.png" class="heatIcon" /> <span id="low">2</span>°c
+        </h4>
+      </div>
+    </section>
+
+    <!--upcoming weather-->
+    <div id="forecast"></div>
+
+    <!--search form-->
+
+    <section class="search">
+      <h3>let's check somewhere else.</h3>
+
+      <form id="search-form" class="search-bar">
+        <input
+          type="search"
+          id="city-selector"
+          class="searchInput"
+          name="search"
+          autocomplete="none"
+          required
+        />
+        <button class="search-btn" type="submit">
+          <span>Search another city</span>
+        </button>
+
+        <button class="search-btn" type="submit" id="check-location">
+          <span>Search where I am!</span>
+        </button>
+      </form>
+    </section>
+
+    <section class="footer">
+      <p>
+        weather icons made by
+        <a href="https://www.flaticon.com/authors/bqlqn" title="bqlqn">bqlqn</a>
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a
+        ><br />open-source code written katie for shecodes.
+      </p>
+    </section>
+
+    <script src="src/script.js"></script>
+  </body>
+</html>
